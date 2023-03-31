@@ -26,7 +26,7 @@ GO
 Merge:
 This procedure consist is two parts, Update and Insert by Id(in this case ProductId). 
 In case Update, the table Purchasing.logChangePaymentsLT is filled in exactly the same way as in the case wheh use pocedure Purchasing.UpdatePaymentsLT.
-In case Insert, the table Purchasing.logChangePaymentsLT is filled with value NULL in columns for PreviousValue and new values will insert in columns for NewValue.
+In case Insert, in table Purchasing.paymentsLT will insert a new row and the table Purchasing.logChangePaymentsLT is filled with value NULL in columns for PreviousValue and new values will insert in columns for NewValue.
 
 Than execute this procedure:
 
